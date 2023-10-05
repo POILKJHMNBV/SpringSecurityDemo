@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+<div class="container">
+    <form th:action="@{/user/login}" method="post" id="login-form" >
+        <label for="username">用户名：</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">密码：</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <button type="submit">登录</button>
+    </form>
+</div>
+</body>
+</html>

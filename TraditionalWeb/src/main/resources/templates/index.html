@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+<body>
+<div class="container">
+    <h1>欢迎<span th:text="${username}"></span>来到水神的国度！</h1>
+    <p>在这里，你可以畅游在各种精彩的海底世界中。</p>
+    <img src="../static/img/index.png"  alt="原神4.0">
+</div>
+<div>
+    <a th:href="@{/user/details}" class="exit-button">详情</a>
+    <a th:href="@{/user/enter}" class="exit-button">进入</a>
+    <a th:href="@{/logout}" class="exit-button">退出</a>
+</div>
+</body>
+</html>
