@@ -1,7 +1,7 @@
 # SpringSecurityDemo
 
 ## 前言
-
+本项目为博客https://blog.csdn.net/qq_43437731/article/details/133587765的示例项目
 本项目旨在演示`Spring Security`在传统`Web`项目和前后端分离项目中的简单使用
 
 ## 组织架构
